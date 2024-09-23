@@ -23,20 +23,25 @@
 
 ### Step 1: Clone Repository
 Silahkan download project dan extract project di komputer, atau gunakan git clone
-\`\`\`bash
+```bash
 git clone https://github.com/username/repo-name.git](https://github.com/satriaharum01/SPK-GIS_AHP-SMART_PUPR.git
-\`\`\`
+```
 
 ### Step 2: Install Dependencies
-\`\`\`bash
+```
 composer install
-\`\`\`
+```
 
 ### Step 3: Copy .env File dan Konfigurasi
-\`\`\`bash
+Copy Environment
+```bash
 cp .env.example .env
+```
+Generate Key
+```
 php artisan key:generate
-\`\`\`
+```
+
 Sesuaikan `.env` file dengan pengaturan database dan konfigurasi lainnya.
 
 ### Step 4: Migrasi Database
@@ -44,9 +49,9 @@ Silahkan buat database baru dan import database menggunakan file .sql yang ada.
 - DBNAME : laravel_ulan
 
 ### Step 5: Jalankan Server
-\`\`\`bash
+```bash
 php artisan serve
-\`\`\`
+```
 
 ## Usage
 Project ini merupakan implementasi tugas akhir dari mahasiswa, gunakan dengan bijak.<br>
